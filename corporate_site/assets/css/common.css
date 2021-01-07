@@ -19,10 +19,6 @@ section h2 {
 a:hover {
   opacity: 0.5;
 }
-.none {
-  display: none;
-}
-
 *, *:before, *:after {
   box-sizing: border-box;
 }
