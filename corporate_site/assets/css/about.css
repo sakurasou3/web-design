@@ -134,11 +134,15 @@ body {
 
 .section-representatives ul {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;  /* 画面幅に入りきる分だけ横並びにする */
 }
 
 .section-representatives ul li {
   text-align: left;
   margin-bottom: 40px;
+  max-width: 327px;
+  margin: 0 auto 40px;
 }
 
 .section-representatives ul img {
@@ -152,6 +156,16 @@ body {
 .section-representatives__position {
   color: #777;
   margin-bottom: 17px;
+}
+
+@media(min-width: 1160px) {
+  .section-representatives {
+    margin-bottom: 80px;
+  }
+  .section-representatives h2 {
+    text-align: left;
+    margin-bottom: 40px;
+  }
 }
 
 .section-infomation {
@@ -168,11 +182,30 @@ body {
   width: 100%;
   text-align: left;
   padding: 30px 24px 26px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .section-infomation table th {
   width: 40%;
   font-weight: 500;
+}
+
+@media(min-width: 1160px) {
+  .section-infomation {
+    margin-bottom: 80px;
+  }
+  .section-infomation h2 {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  .section-infomation table {
+    font-size: 2.4rem;
+    line-height: 3.6rem;    /* だいたい文字サイズの1.5倍するとバランスがいい */
+  }
+  .section-infomation table th {
+    width: 300px;
+  }
 }
 
 .section-access {
@@ -192,7 +225,29 @@ body {
 
 .section-access__map {
   width: 100%;
-  height: 150px;
+  height: 46vw;
+  max-height: 470px;
   border: solid 1px #999;
   vertical-align: bottom;
+}
+
+@media(min-width: 1160px) {
+  .section-access {
+    margin-bottom: 80px;
+    background-color: transparent;
+    /* 透明色にすることで親要素の色に合わせる */
+  }
+  .section-access h2 {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  .section-access__address {
+    background-color: #fff;
+  }
+  .section-access address {
+    padding-top: 40px;
+    margin-bottom: 40px;
+  }
+
+
 }
