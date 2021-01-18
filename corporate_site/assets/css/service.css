@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.section-top {
+    color: #fff;
+    padding: 40px 24px 10px;
+    background-color: #000;
+}
+
+.section-top h2 {
+    line-height: 3.6rem;
+}
+
+.section-top__main-image img {
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 0%;
+}
+
+/* あとでslickをjsで実装したときに使う */
+
+.section-top .slick-dots {
+    bottom: 10px;
+}
+
+.section-top .slick-dots li button:before {
+    color: #fff;
+    font-size: 10px;
+}
+
+.section-runner, .section-grip {
+    background-color: #292929;
+    padding: 60px 0;
+    color: #fff;
+}
+
+.section-grip {
+    background-color: #000;
+}
+
+.section-runner__visual {
+    width: 86%;
+    margin: 0 auto 40px;
+}
+
+.section-runner__main_image, .section-grip__main_image {
+    width: 100%;
+}
+
+.section-grip__visual {
+    margin-bottom: 40px;
+}
+
+.section-runner h2, .section-grip h2 {
+    margin-bottom: 20px;
+}
+
+.section-shop {
+    background-color: #292929;
+    color: #fff;
+    padding: 60px 24px;
+}
+.section-shop h2 {
+    margin-bottom: 60px;
+}
+.section-shop__item-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;    /* 幅が足りなくなったら次の行に改行する */
+    justify-content: center;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.section-shop__item-list li {
+    padding-bottom: 60px;
+    width: 250px;
+    margin: 0 auto;
+}
+.section-shop__item-list img {
+    width: 178px;
+    height: 178px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 500px;   /* 大きければ球体になる。数字が大きければなんでもいい */
+    margin: 0 auto 40px;
+}
+.section-shop__item-list h3 {
+    font-size: 2.4rem;
+    margin-bottom: 24px;
+}
+.section-shop__item-list a {
+    text-decoration: none;
+    color: #fff;
+}
