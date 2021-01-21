@@ -1,0 +1,19 @@
+.section-top {
+  height: 400px;
+  background-color: #888;
+}
+
+.section-top h2 {
+  color: #f00;
+}
+
+.section-top:hover {
+  background-color: #333;
+}
+
+.section-news__title {
+  color: #00F;
+  font-size: 40px;
+  font-weight: 300;
+}
+/*# sourceMappingURL=style.css.map */

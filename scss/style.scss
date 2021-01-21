@@ -1,0 +1,31 @@
+// 公式サイト
+// https://sass-lang.com/
+// 定数
+$baseBackgroundColor: #888;
+$hoberBackgroundColor: #333;
+
+.section-top {
+    height: 400px;
+    background-color:$baseBackgroundColor;
+
+    h2 {
+        color: #f00;
+    }
+
+    // .section-top:hoverの意味
+    // このコメントはCSS側には反映されない
+    &:hover {
+        background-color: $hoberBackgroundColor;
+    }
+}
+.section-news {
+    // ここは「.section-news__title」クラスを指定している
+    &__title {
+        color: #00F;
+        font: {
+            size: 40px;
+            weight:300;
+        }
+    }
+
+}
