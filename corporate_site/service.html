@@ -25,6 +25,8 @@
 
   <link href="assets/images/common/favicon.ico" rel="icon" type="image/x-icon" />
   <link rel="apple-touch-icon" href="assets/images/common/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
 
 </head>
 
@@ -50,8 +52,14 @@
   <main class="main">
     <section class="section-top">
       <h2>DHW Company 史上最高の「DHW Dash」できました！</h2>
-      <div class="section-top__main-image">
-        <img src="assets/images/services/enamel_side_fix.jpg" alt="エナメル">
+      <!-- 外側divタグ(slick-slide)と
+        スライドさせる数分のdivの中に画像の形ができていればslick.jsの適用が可能
+        参考：https://kenwheeler.github.io/slick/ -->
+      <div id="slick-slide" class="section-top__main-image">
+        <div><img src="assets/images/services/enamel_side_fix.jpg" alt="エナメル"></div>
+        <div><img src="assets/images/services/skyblue_side_fix.jpg" alt="ブルー"></div>
+        <div><img src="assets/images/services/leather_side_fix.jpg" alt="レザー"></div>
+        <div><img src="assets/images/services/orange_side_fix.jpg" alt="オレンジ"></div>
       </div>
     </section>
     <section class="section-runner">
@@ -128,7 +136,16 @@
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script> 
+  
+  <!-- slick.jsの読み込み -->
+  <!-- https://kenwheeler.github.io/slick/に記載のある1.2.1のmigrate.jsは不要（今回3.4.1を読み込んでいるため）
+    ファイル自体はhttps://kenwheeler.github.io/slick/からダウンロードしておく。
+    空白や改行を除いたmin版を読み込む方が軽くていい。
+    独自のjsファイル（common.js）より先に読み込んでおくこと
+   -->
+  <script type="text/javascript" src="assets/slick/slick.min.js"></script> 
+
   <!-- jsファイルの読み込み -->
-  <script src="assets/js/common.js"></script>  
+  <script src="assets/js/common.js"></script>
 </body>
 </html>
