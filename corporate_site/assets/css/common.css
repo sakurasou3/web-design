@@ -208,3 +208,20 @@ a:hover {
     font-weight: 400;
   }
 }
+
+/* return to top */
+#scroll-top {
+  background-color: #eee;
+  opacity: 0.6;
+  padding: 10px;
+  /* 右下に固定 */
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+#scroll-top a {
+  /* リンク表示を削除 */
+  text-decoration: none;
+  color: #333;
+}
