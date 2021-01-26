@@ -133,7 +133,16 @@
   }
 }
 
-
+/* AnimatedModal用 */
+.modal {
+  text-decoration: none;
+}
+.close-animatedModal-Runner, .close-animatedModal-grip {
+  margin: 100px auto;
+}
+.modal-content {
+  color: #fff;
+}
 
 
 
